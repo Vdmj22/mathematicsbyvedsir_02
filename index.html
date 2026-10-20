@@ -229,35 +229,41 @@
   <!-- ========================================== -->
   <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800/90 transition-all duration-300">
     <!-- Notice Bar for Local Admissions -->
-    <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-400 text-slate-950 text-xs py-1.5 px-4 text-center font-bold flex items-center justify-center space-x-2 shadow-sm">
+    <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-400 text-slate-950 text-xs py-2.5 px-4 text-center font-bold flex items-center justify-center space-x-2 shadow-sm border-b border-amber-600/30 relative z-20">
       <span class="inline-block w-2 h-2 rounded-full bg-slate-950 animate-ping mr-1"></span>
-      <span>Admissions Open for 2025–26 Batches | Limited to 10–12 Students Per Batch | Techzone 4, Greater Noida West</span>
+      <span class="tracking-tight sm:tracking-normal">Admissions Open for 2025–26 Batches | Limited to 10–12 Students Per Batch | Techzone 4, Greater Noida West</span>
       <a href="tel:+917441155877" class="underline font-extrabold ml-2 text-slate-950 hover:text-indigo-950 hidden sm:inline">Call: +91 7441155877</a>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between min-h-[4.75rem] sm:min-h-[5.25rem] py-3 sm:py-4">
         
         <!-- Brand Identity with Official Uploaded Logo -->
-        <a href="#" class="flex items-center space-x-3 group">
+        <a href="#" class="flex items-center space-x-3.5 sm:space-x-4 group py-1.5 focus:outline-none shrink-0 my-auto">
           <img 
             src="/assets/aistudio/mvb_13677cfc.png" 
             alt="Mathematics by Ved Sir Logo" 
-            class="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.25)]" 
+            class="h-10 sm:h-11 md:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.25)] shrink-0" 
           />
-          <div class="hidden sm:block border-l border-slate-800 pl-3">
-            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">Techzone 4, Greater Noida West</span>
-            <span class="text-[11px] text-slate-400 font-medium">14+ Yrs Teaching Excellence</span>
+          <!-- Authority & Location Badge (Cleanly Centered & Generously Padded) -->
+          <div class="hidden sm:flex flex-col justify-center border-l-2 border-slate-700/80 pl-3.5 py-0.5 my-auto self-center">
+            <span class="text-[10px] md:text-[11px] font-extrabold text-amber-400 uppercase tracking-wider block leading-snug">
+              Techzone 4, Greater Noida West
+            </span>
+            <span class="text-[11px] md:text-xs text-slate-300 font-medium block mt-0.5 leading-snug">
+              14+ Yrs Teaching Excellence
+            </span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-300">
+        <nav class="hidden lg:flex items-center space-x-7 font-medium text-sm text-slate-300">
           <a href="#courses" class="hover:text-amber-400 transition-colors">Courses</a>
           <a href="#applied-maths" class="hover:text-amber-400 transition-colors flex items-center">
             Applied Maths <span class="ml-1.5 px-1.5 py-0.5 text-[10px] bg-amber-400/20 text-amber-300 font-bold rounded border border-amber-400/30">CBSE 241</span>
           </a>
           <a href="#methodology" class="hover:text-amber-400 transition-colors">Methodology</a>
+          <a href="#diagnostics" class="hover:text-amber-400 transition-colors text-amber-300 font-semibold">Test Series</a>
           <a href="#results" class="hover:text-amber-400 transition-colors">Results</a>
           <a href="#faq" class="hover:text-amber-400 transition-colors">FAQs</a>
           <a href="#location" class="hover:text-amber-400 transition-colors">Location</a>
@@ -293,6 +299,7 @@
         <a href="#courses" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Courses</a>
         <a href="#applied-maths" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-amber-400 hover:bg-amber-400/10 rounded-md">Applied Maths (241)</a>
         <a href="#methodology" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Methodology</a>
+        <a href="#diagnostics" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-amber-300 hover:bg-amber-400/10 rounded-md">Test Series</a>
         <a href="#results" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Board Results</a>
         <a href="#faq" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Parent FAQs</a>
         <a href="#location" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Center Address</a>
@@ -473,11 +480,12 @@
                 <span class="text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded">CBSE Class 12</span>
               </div>
               <div class="flex items-baseline space-x-2">
-                <span class="font-display text-2xl font-extrabold text-white">Shaurya Rawat</span>
-                <span class="text-lg font-bold text-amber-400">94% in Mathematics</span>
+                <span class="font-display text-2xl font-extrabold text-white">Shaurya</span>
+                <span class="text-lg font-bold text-amber-400">96% in Mathematics</span>
               </div>
+              <div class="text-[11px] font-semibold text-emerald-400">St. John's School • Offline Batch</div>
               <p class="text-[12px] text-slate-300 italic">
-                "Ved Sir’s step-by-step calculus drills and rigorous mock tests turned my fear into my highest-scoring subject."
+                "Ved Sir’s step-by-step calculus drills and rigorous mock tests turned my fear into a 96% board score."
               </p>
             </div>
 
@@ -1099,131 +1107,817 @@
 
 
   <!-- ========================================== -->
-  <!-- 7. PROOF & RESULTS SECTION -->
+  <!-- 6.5 SMART DIAGNOSTIC TEST SERIES & EVALUATION -->
   <!-- ========================================== -->
-  <section id="results" class="py-20 bg-slate-900 text-white relative overflow-hidden scroll-mt-24">
-    <!-- Background Accents -->
-    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
+  <section id="diagnostics" class="py-20 bg-gradient-to-b from-slate-950 via-[#0d1527] to-slate-950 text-white relative overflow-hidden scroll-mt-24 border-t border-b border-indigo-950/80">
+    <!-- Ambient Glow Effects -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-600/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(rgba(245,158,11,0.04)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
+      <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-amber-400 font-bold text-xs uppercase tracking-wider bg-amber-400/10 border border-amber-400/20 px-3 py-1 rounded-full">
-          Proven Track Record
-        </span>
-        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
-          Real Results That Speak for Themselves
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+          <i data-lucide="file-check-2" class="w-4 h-4 text-amber-400"></i>
+          <span>Precision Evaluation Engine</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          Smart Diagnostic Test Series &amp; Step-by-Step Evaluation
         </h2>
-        <p class="mt-3 text-slate-300 text-base">
-          From 50% scorers jumping to 85%+ to board toppers scoring 94%+, here is the impact of focused, small-batch mentoring in Greater Noida West.
+        <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+          Beyond basic marks: We provide granular CBSE step-marking breakdown and error diagnostic reports so parents and students know exactly where every mark is won or lost.
         </p>
       </div>
 
-      <!-- Metrics Row -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
-          <div class="font-display text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">14+</div>
-          <div class="text-xs sm:text-sm font-semibold text-slate-200">Years of Experience</div>
-          <div class="text-[11px] text-slate-400 mt-1">Teaching Senior Secondary</div>
+      <!-- 3 Key Features Row -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        
+        <!-- Feature 1: CBSE Step-Marking Precision -->
+        <div class="bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 rounded-2xl p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 shadow-lg group">
+          <div class="w-12 h-12 rounded-xl bg-amber-400/15 border border-amber-400/30 text-amber-300 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="check-check" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">Precision Standard</span>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2.5">
+            CBSE Step-Marking Precision
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Evaluated line-by-line according to official CBSE marking criteria so students never lose partial marks on formula statements, justifications, or final units.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center space-x-2">
+              <i data-lucide="badge-check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Formula statement &amp; condition verification</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="badge-check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Line-by-line mark distribution (+0.5 / +1.0)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="badge-check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Final unit, notation &amp; presentation rigor</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
-          <div class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">+28</div>
-          <div class="text-xs sm:text-sm font-semibold text-slate-200">Average Marks Jump</div>
-          <div class="text-[11px] text-slate-400 mt-1">From Half-Yearly to Boards</div>
+        <!-- Feature 2: Granular Error Diagnostics -->
+        <div class="bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 rounded-2xl p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 shadow-lg group">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/15 border border-rose-500/30 text-rose-300 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="crosshair" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-rose-400">Root-Cause Tagging</span>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2.5">
+            Granular Error Diagnostics
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Identifies the root cause of lost marks: Categorizes mistakes into Conceptual Gaps, Algebraic/Calculation Slips, or Missing Steps.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center space-x-2">
+              <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span>Concept Gaps vs. Execution Slips distinguished</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span>Calculation slip alerts (sign flips, algebraic lapses)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span>Targeted micro-drills to permanently plug leaks</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
-          <div class="font-display text-3xl sm:text-4xl font-extrabold text-sky-400 mb-1">92%</div>
-          <div class="text-xs sm:text-sm font-semibold text-slate-200">Scored Above 85%</div>
-          <div class="text-[11px] text-slate-400 mt-1">In CBSE Mathematics</div>
+        <!-- Feature 3: Transparent Parent Progress Reports -->
+        <div class="bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 rounded-2xl p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 shadow-lg group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="trending-up" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-emerald-400">Zero Surprises</span>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2.5">
+            Transparent Parent Progress Reports
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Regular chapter-wise performance trend tracking shared directly with parents to ensure continuous improvement and timely intervention.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center space-x-2">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Direct WhatsApp diagnostic scorecard after every test</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Time-budget analysis (exam pacing &amp; speed)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+              <span>Available 24/7 on www.mathematicsbyvedsir.in portal</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
-          <div class="font-display text-3xl sm:text-4xl font-extrabold text-purple-400 mb-1">1200+</div>
-          <div class="text-xs sm:text-sm font-semibold text-slate-200">Students Mentored</div>
-          <div class="text-[11px] text-slate-400 mt-1">Across Delhi NCR &amp; Noida</div>
+      </div>
+
+      <!-- Visual Sample Diagnostic Evaluation Card / Report Mockup & Image Slots -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+        
+        <!-- Left Column: Realistic Interactive Tailwind Mockup Card -->
+        <div class="lg:col-span-7 bg-slate-900 border-2 border-amber-500/40 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+          <!-- Top Accent Ribbon -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-slate-800">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/30 flex items-center justify-center font-display font-bold text-lg">
+                ∑
+              </div>
+              <div>
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block">Mathematics by Ved Sir</span>
+                <h4 class="font-display font-bold text-lg text-white">Diagnostic Evaluation Report</h4>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold">
+                CBSE Official Standard
+              </span>
+            </div>
+          </div>
+
+          <!-- Student & Test Metadata (Matching Official Ved Sir Report) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-b border-slate-800/80 text-xs">
+            <div>
+              <span class="text-slate-400 block text-[11px]">Student Name:</span>
+              <span class="font-bold text-white">Pratyush</span>
+              <span class="text-[10px] text-slate-400 block">Roll: MVB 12007</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Class &amp; Date:</span>
+              <span class="font-bold text-amber-300">Class 12 • 19 Oct</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Subject &amp; Test:</span>
+              <span class="font-bold text-white">Mathematics (20 M)</span>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Offline Center:</span>
+              <span class="font-bold text-slate-300">Techzone 4, Gr. Noida</span>
+            </div>
+          </div>
+
+          <!-- Quantitative Metrics Badges (Where Your Marks Went) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 py-5">
+            <!-- Metric 1: Marks -->
+            <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-center">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Total Score</div>
+              <div class="font-display font-extrabold text-2xl text-emerald-400 mt-0.5">15.5/20</div>
+              <div class="text-[10px] font-semibold text-emerald-300 mt-0.5">78% • 7 Correct / 10</div>
+            </div>
+
+            <!-- Metric 2: Careless Slip Deduction -->
+            <div class="bg-slate-950/80 border border-amber-950/70 rounded-xl p-3 text-center">
+              <div class="text-[10px] uppercase font-bold text-amber-300">Careless Slips</div>
+              <div class="font-display font-extrabold text-2xl text-amber-400 mt-0.5">-1.0 M</div>
+              <div class="text-[10px] text-amber-300/80 mt-0.5">Flagged in Q4 formula</div>
+            </div>
+
+            <!-- Metric 3: Incomplete Work / Step Loss -->
+            <div class="bg-slate-950/80 border border-rose-950/80 rounded-xl p-3 text-center">
+              <div class="text-[10px] uppercase font-bold text-rose-300">Incomplete Steps</div>
+              <div class="font-display font-extrabold text-2xl text-rose-400 mt-0.5">-3.0 M</div>
+              <div class="text-[10px] text-rose-300/80 mt-0.5">Missing Q10 statement</div>
+            </div>
+
+            <!-- Metric 4: Concept Gap -->
+            <div class="bg-slate-950/80 border border-indigo-950/80 rounded-xl p-3 text-center">
+              <div class="text-[10px] uppercase font-bold text-indigo-300">Concept Gap</div>
+              <div class="font-display font-extrabold text-2xl text-indigo-400 mt-0.5">-0.5 M</div>
+              <div class="text-[10px] text-indigo-300 mt-0.5">Minimal concept deficit</div>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Question Audit Breakdown -->
+          <div class="bg-slate-950 rounded-xl border border-slate-800 p-4 space-y-3.5 mb-5">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-800">
+              <span class="text-xs font-bold text-slate-200">
+                Diagnostic Analysis &amp; Actionable Remediation Plan
+              </span>
+              <span class="text-[11px] font-bold text-amber-300 bg-amber-950/60 border border-amber-800/40 px-2 py-0.5 rounded">
+                Recoverable Marks: +4.5 M
+              </span>
+            </div>
+
+            <div class="space-y-2 text-xs">
+              <!-- Item 1: Q10 Priority Fix -->
+              <div class="flex items-start justify-between bg-rose-950/25 p-2.5 rounded-lg border border-rose-800/40">
+                <div class="flex items-start space-x-2">
+                  <span class="w-5 h-5 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">!</span>
+                  <div>
+                    <span class="font-semibold text-rose-200">Priority Fix: Question 10 (Position Vectors to Classify Shapes)</span>
+                    <p class="text-[11px] text-rose-300/90 mt-0.5">No final conclusion or line equation written. Must show full step derivation.</p>
+                  </div>
+                </div>
+                <span class="font-mono text-rose-400 font-bold shrink-0 ml-2">-2.0 M</span>
+              </div>
+
+              <!-- Item 2: Q4 Formula First -->
+              <div class="flex items-start justify-between bg-amber-950/25 p-2.5 rounded-lg border border-amber-800/40">
+                <div class="flex items-start space-x-2">
+                  <span class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">⚠</span>
+                  <div>
+                    <span class="font-semibold text-amber-200">Fix Formula Statement: Question 4</span>
+                    <p class="text-[11px] text-amber-300/90 mt-0.5">Formula to use correctly. Write formula first to secure +1.5 step marks.</p>
+                  </div>
+                </div>
+                <span class="font-mono text-amber-400 font-bold shrink-0 ml-2">-1.5 M</span>
+              </div>
+
+              <!-- Item 3: Q5 Show Full Steps -->
+              <div class="flex items-start justify-between bg-slate-900/60 p-2.5 rounded-lg border border-slate-800">
+                <div class="flex items-start space-x-2">
+                  <span class="w-5 h-5 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">↗</span>
+                  <div>
+                    <span class="font-semibold text-slate-200">Show Full Steps: Question 5</span>
+                    <p class="text-[11px] text-slate-400 mt-0.5">Redo Q5 and compare with marking scheme for complete 2/2 score.</p>
+                  </div>
+                </div>
+                <span class="font-mono text-sky-400 font-bold shrink-0 ml-2">-1.0 M</span>
+              </div>
+
+              <!-- Item 4: Mastered Questions -->
+              <div class="flex items-start justify-between bg-emerald-950/20 p-2.5 rounded-lg border border-emerald-800/40">
+                <div class="flex items-start space-x-2">
+                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">✓</span>
+                  <div>
+                    <span class="font-semibold text-emerald-300">Perfect Execution: Questions Q1, Q2, Q3, Q6, Q7, Q8, Q9</span>
+                    <p class="text-[11px] text-slate-400 mt-0.5">100% CBSE step-marking compliance with verified algebraic justification.</p>
+                  </div>
+                </div>
+                <span class="font-mono text-emerald-400 font-bold shrink-0 ml-2">+14.0 M</span>
+              </div>
+            </div>
+
+            <!-- Ved Sir's Personalized Annotation -->
+            <div class="bg-amber-400/10 border border-amber-400/30 rounded-lg p-3 text-xs">
+              <div class="flex items-center space-x-2 text-amber-300 font-bold mb-1">
+                <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+                <span>Ved Sir's Diagnostic Note for Parent &amp; Student:</span>
+              </div>
+              <p class="text-slate-300 leading-relaxed italic">
+                "Pratyush has demonstrated clear conceptual understanding across 90% of the paper. His 4.5 marks deduction was due to skipped conclusion steps on Q10 and rushing through formula declaration on Q4. With 2 targeted step-presentation drills, this score will convert to an easy 95%+ in the Board Exam."
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-800/80">
+            <span class="flex items-center">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 mr-1.5"></i>
+              Verified CBSE Evaluation Standard
+            </span>
+            <span class="text-slate-400">Sent via WhatsApp to Parents within 24 Hours</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Real Answer Sheets & Diagnostic Trend Chart Images -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Image Container 1: Evaluated Student Answer Sheet & Mark Breakdown -->
+          <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl group hover:border-amber-400/40 transition-colors">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-amber-400"></i>
+                <h4 class="font-display font-bold text-white text-base">Evaluated Student Answer Sheet</h4>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold uppercase">Real Report</span>
+            </div>
+            <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+              Actual student test report sheet showing <strong class="text-white">"Where Your Marks Went"</strong> waterfall deduction analysis, question-by-question scoring, and specific step-marking feedback.
+            </p>
+
+            <!-- Responsive Frame for Real Answer Sheet Photo -->
+            <div class="relative rounded-xl overflow-hidden border border-slate-700 bg-white shadow-lg p-1.5">
+              <img 
+                src="/assets/aistudio/image_57ff5041.png" 
+                alt="Evaluated Student Answer Sheet and Where Your Marks Went Diagnostic Report by Ved Sir" 
+                class="w-full h-auto max-h-[380px] object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                loading="lazy"
+              />
+              <div class="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between px-2 text-[11px] text-slate-700 bg-slate-50 rounded-md py-1">
+                <span class="font-semibold text-slate-900 flex items-center">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 mr-1"></i>
+                  Student: Pratyush (Roll MVB 12007)
+                </span>
+                <span class="font-bold text-emerald-700">Score: 15.5 / 20</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Container 2: Chapter-Wise Diagnostic Trend Chart -->
+          <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl group hover:border-emerald-400/40 transition-colors">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center space-x-2">
+                <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-400"></i>
+                <h4 class="font-display font-bold text-white text-base">Chapter-Wise Diagnostic Trend Chart</h4>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-bold uppercase">Live Analytics</span>
+            </div>
+            <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+              Granular question-level performance graph for all 10 questions identifying class average, high-impact dips, and individual student intervention groups.
+            </p>
+
+            <!-- Responsive Frame for Diagnostic Analytics Chart -->
+            <div class="relative rounded-xl overflow-hidden border border-slate-700 bg-white shadow-lg p-2">
+              <img 
+                src="/assets/aistudio/image_ed275057.png" 
+                alt="Chapter-Wise Diagnostic Question Analytics and Performance Curve Chart by Mathematics by Ved Sir" 
+                class="w-full h-auto max-h-[260px] object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                loading="lazy"
+              />
+              <div class="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between px-2 text-[11px] text-slate-700 bg-slate-50 rounded-md py-1">
+                <span class="font-semibold text-slate-900 flex items-center">
+                  <i data-lucide="line-chart" class="w-3.5 h-3.5 text-brand-600 mr-1"></i>
+                  10-Question Diagnostic Curve
+                </span>
+                <span class="font-bold text-slate-900">Class Average: 67%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Direct Call-To-Action Button Under Section -->
+      <div class="text-center pt-4">
+        <a href="https://wa.me/917441155877?text=Hi%20Ved%20Sir,%20please%20share%20a%20sample%20diagnostic%20test%20evaluation%20report" 
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center space-x-3 px-8 py-4 rounded-xl text-sm sm:text-base font-extrabold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all shadow-xl shadow-amber-400/25 transform hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-5 h-5 text-emerald-950"></i>
+          <span>Request a Sample Diagnostic Report on WhatsApp</span>
+        </a>
+        <p class="text-xs text-slate-400 mt-3">
+          Instant WhatsApp response • Includes evaluated answer sheet sample &amp; error classification breakdown
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================== -->
+  <!-- 7. PROOF & RESULTS SECTION -->
+  <!-- ========================================== -->
+  <!-- ========================================== -->
+  <!-- 7. HALL OF FAME & PROVEN BOARD RESULTS -->
+  <!-- ========================================== -->
+  <section id="results" class="py-20 bg-slate-950 text-white relative overflow-hidden scroll-mt-24 border-t border-b border-indigo-950">
+    <!-- Background Accents -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+          <i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i>
+          <span>Academic Excellence &amp; Board Results</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mt-1">
+          Hall of Fame &amp; Proven Board Results
+        </h2>
+        <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+          Real students, real scores. From perfect 100/100 board scores to transformative marks jumps across top schools in Noida, Greater Noida West, and Delhi NCR under the mentorship of Ved Sir.
+        </p>
+      </div>
+
+      <!-- Quick Metrics Row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 text-center backdrop-blur-sm shadow-md">
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-amber-400 mb-1">100/100</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-200">Perfect Board Scores</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">CBSE Mathematics</div>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 text-center backdrop-blur-sm shadow-md">
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-emerald-400 mb-1">96%</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-200">Top Board Achievers</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Multiple Students</div>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 text-center backdrop-blur-sm shadow-md">
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-sky-400 mb-1">+28</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-200">Avg. Marks Jump</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Half-Yearly to Board Exam</div>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 text-center backdrop-blur-sm shadow-md">
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-purple-400 mb-1">14+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-200">Years of Excellence</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">1200+ Mentored</div>
         </div>
       </div>
 
-      <!-- Testimonial Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Testimonial 1 -->
-        <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm">
+      <!-- CATEGORY 1: 🏆 PERFECT 100/100 SCORERS -->
+      <div class="mb-14">
+        <div class="flex items-center space-x-2.5 mb-6">
+          <span class="p-2 rounded-xl bg-amber-400/20 text-amber-400 border border-amber-400/30">
+            <i data-lucide="crown" class="w-5 h-5"></i>
+          </span>
           <div>
-            <div class="flex items-center space-x-1 text-amber-400 mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-            </div>
-            <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
-              "My son Shaurya was scoring in the low 60s in pre-boards. After joining Ved Sir's small batch at La Residentia, his entire approach to calculus changed. He ended up scoring <strong>94% in Class 12 Boards</strong>! Ved Sir is truly a godsend for Noida Extension students."
-            </p>
-          </div>
-          <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
-            <div class="w-10 h-10 rounded-full bg-amber-400/20 text-amber-400 flex items-center justify-center font-bold text-sm">
-              SR
-            </div>
-            <div>
-              <div class="font-bold text-sm text-white">Mrs. Rawat</div>
-              <div class="text-[11px] text-slate-400">Parent of Shaurya Rawat (12th Board 94%) • Techzone 4</div>
-            </div>
+            <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
+              <span>🏆 Perfect 100/100 Scorers</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider">
+                Elite Pinnacle
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400">Zero-error CBSE Board mastery achieved through step-by-step evaluation rigor</p>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm">
-          <div>
-            <div class="flex items-center space-x-1 text-amber-400 mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Card 1: Balraj 100/100 -->
+          <div class="bg-gradient-to-b from-amber-950/40 via-slate-900 to-slate-950 border-2 border-amber-400/80 rounded-2xl p-6 sm:p-7 shadow-2xl relative overflow-hidden group hover:border-amber-300 transition-all">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-400/15 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="flex items-start justify-between gap-4">
+              <div class="space-y-1.5">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="px-2.5 py-1 rounded-md bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[11px] font-bold uppercase tracking-wider inline-flex items-center">
+                    <i data-lucide="trophy" class="w-3.5 h-3.5 mr-1 text-amber-400"></i> Perfect 100/100
+                  </span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px] font-semibold">
+                    CBSE Class 12 Boards • 2024–25
+                  </span>
+                </div>
+                <h4 class="font-display font-extrabold text-3xl sm:text-4xl text-white pt-1">
+                  Balraj
+                </h4>
+                <div class="inline-flex items-center text-xs text-slate-300 space-x-1">
+                  <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>CBSE Senior Secondary Board</span>
+                </div>
+              </div>
+
+              <div class="text-right shrink-0">
+                <div class="font-display font-black text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-200">
+                  100<span class="text-2xl sm:text-3xl text-amber-400/80">/100</span>
+                </div>
+                <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40 mt-1 inline-block">
+                  Flawless Execution
+                </span>
+              </div>
             </div>
-            <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
-              "Finding a teacher who understands <strong>Applied Mathematics (241)</strong> in Noida Extension was impossible until we met Ved Sir. Most teachers kept teaching standard core maths formulas. Ved Sir's financial math worksheets and case studies helped my daughter score 92 in 12th!"
-            </p>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs gap-2">
+              <div class="inline-flex items-center space-x-2 px-2.5 py-1 rounded-lg bg-amber-400/10 border border-amber-400/30 text-amber-300 font-semibold">
+                <i data-lucide="laptop" class="w-4 h-4 text-amber-400"></i>
+                <span>Learning Format: Interactive Online Batch</span>
+              </div>
+              <span class="text-[11px] text-slate-400">Official CBSE Board Result</span>
+            </div>
           </div>
-          <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
-            <div class="w-10 h-10 rounded-full bg-indigo-400/20 text-indigo-300 flex items-center justify-center font-bold text-sm">
-              MK
+
+          <!-- Card 2: Mayank Aggarwal 100/100 -->
+          <div class="bg-gradient-to-b from-amber-950/40 via-slate-900 to-slate-950 border-2 border-amber-400/80 rounded-2xl p-6 sm:p-7 shadow-2xl relative overflow-hidden group hover:border-amber-300 transition-all">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-400/15 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="flex items-start justify-between gap-4">
+              <div class="space-y-1.5">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="px-2.5 py-1 rounded-md bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[11px] font-bold uppercase tracking-wider inline-flex items-center">
+                    <i data-lucide="trophy" class="w-3.5 h-3.5 mr-1 text-amber-400"></i> Perfect 100/100
+                  </span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px] font-semibold">
+                    CBSE Class 12 Boards • 2024–25
+                  </span>
+                </div>
+                <h4 class="font-display font-extrabold text-3xl sm:text-4xl text-white pt-1">
+                  Mayank Aggarwal
+                </h4>
+                <div class="inline-flex items-center text-xs text-slate-300 space-x-1">
+                  <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>CBSE Senior Secondary Board</span>
+                </div>
+              </div>
+
+              <div class="text-right shrink-0">
+                <div class="font-display font-black text-4xl sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-200">
+                  100<span class="text-2xl sm:text-3xl text-amber-400/80">/100</span>
+                </div>
+                <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40 mt-1 inline-block">
+                  Flawless Execution
+                </span>
+              </div>
             </div>
-            <div>
-              <div class="font-bold text-sm text-white">Manish K. Gupta</div>
-              <div class="text-[11px] text-slate-400">Parent of Riddhi Gupta (Commerce) • Gaur City 2</div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs gap-2">
+              <div class="inline-flex items-center space-x-2 px-2.5 py-1 rounded-lg bg-amber-400/10 border border-amber-400/30 text-amber-300 font-semibold">
+                <i data-lucide="laptop" class="w-4 h-4 text-amber-400"></i>
+                <span>Learning Format: Interactive Online Batch</span>
+              </div>
+              <span class="text-[11px] text-slate-400">Official CBSE Board Result</span>
             </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CATEGORY 2: 🌟 90%+ ELITE ACHIEVERS -->
+      <div class="mb-14">
+        <div class="flex items-center space-x-2.5 mb-6">
+          <span class="p-2 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+            <i data-lucide="star" class="w-5 h-5"></i>
+          </span>
+          <div>
+            <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
+              <span>🌟 90%+ Elite Achievers</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                Top Percentile
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400">Outstanding scores in senior secondary mathematics across premier institutions</p>
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
-        <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm">
-          <div>
-            <div class="flex items-center space-x-1 text-amber-400 mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <!-- Shaurya 96% -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-5 shadow-lg group transition-all duration-200">
+            <div class="flex items-start justify-between">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-amber-300 border border-slate-700">
+                St. John's School
+              </span>
+              <span class="font-display font-black text-2xl sm:text-3xl text-emerald-400">96%</span>
             </div>
-            <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
-              "The biggest advantage is the small batch size of 10 students. In big coaching institutes, teachers never know if a child is actually understanding. Ved Sir checks homework individually and gives immediate feedback. My son scored 96% in Class 10!"
-            </p>
+            <h4 class="font-display font-bold text-xl text-white mt-2">Shaurya</h4>
+            <div class="text-[11px] text-slate-400 mt-0.5">CBSE Class 12 Boards • 2024–25</div>
+            
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center space-x-1.5 text-[11px] text-emerald-300 bg-emerald-950/30 px-2 py-1 rounded border border-emerald-800/30">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span class="font-semibold">Offline Classroom (Techzone 4)</span>
+            </div>
           </div>
-          <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
-            <div class="w-10 h-10 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center font-bold text-sm">
-              AS
+
+          <!-- Surjeet 96% -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-5 shadow-lg group transition-all duration-200">
+            <div class="flex items-start justify-between">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-slate-300 border border-slate-700">
+                CBSE Board Exam
+              </span>
+              <span class="font-display font-black text-2xl sm:text-3xl text-emerald-400">96%</span>
             </div>
-            <div>
-              <div class="font-bold text-sm text-white">Anand Sharma</div>
-              <div class="text-[11px] text-slate-400">Parent of Aarav Sharma (Class 10 CBSE 96%) • Sector 1</div>
+            <h4 class="font-display font-bold text-xl text-white mt-2">Surjeet</h4>
+            <div class="text-[11px] text-slate-400 mt-0.5">CBSE Class 12 Boards • 2024–25</div>
+            
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center space-x-1.5 text-[11px] text-purple-300 bg-purple-950/30 px-2 py-1 rounded border border-purple-800/30">
+              <i data-lucide="user-check" class="w-3.5 h-3.5 text-purple-400 shrink-0"></i>
+              <span class="font-semibold">1-on-1 Personalized Mentorship</span>
             </div>
+          </div>
+
+          <!-- Mansi 96% -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-5 shadow-lg group transition-all duration-200">
+            <div class="flex items-start justify-between">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-slate-300 border border-slate-700">
+                CBSE Board Exam
+              </span>
+              <span class="font-display font-black text-2xl sm:text-3xl text-emerald-400">96%</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-white mt-2">Mansi</h4>
+            <div class="text-[11px] text-slate-400 mt-0.5">CBSE Class 12 Boards • 2024–25</div>
+            
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center space-x-1.5 text-[11px] text-emerald-300 bg-emerald-950/30 px-2 py-1 rounded border border-emerald-800/30">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span class="font-semibold">Offline Classroom Batch</span>
+            </div>
+          </div>
+
+          <!-- Jagritee 92% -->
+          <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-5 shadow-lg group transition-all duration-200">
+            <div class="flex items-start justify-between">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-amber-300 border border-slate-700">
+                Ryan International
+              </span>
+              <span class="font-display font-black text-2xl sm:text-3xl text-emerald-400">92%</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-white mt-2">Jagritee</h4>
+            <div class="text-[11px] text-slate-400 mt-0.5">CBSE Class 12 Boards • 2024–25</div>
+            
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center space-x-1.5 text-[11px] text-emerald-300 bg-emerald-950/30 px-2 py-1 rounded border border-emerald-800/30">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i>
+              <span class="font-semibold">Offline Classroom Batch</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CATEGORY 3: 🎯 STRONG BOARD & SCHOOL EXCELLENCE -->
+      <div class="mb-16">
+        <div class="flex items-center space-x-2.5 mb-6">
+          <span class="p-2 rounded-xl bg-sky-500/20 text-sky-400 border border-sky-500/30">
+            <i data-lucide="target" class="w-5 h-5"></i>
+          </span>
+          <div>
+            <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
+              <span>🎯 Strong Board &amp; School Excellence</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-sky-500/15 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-wider">
+                Proven Trajectory
+              </span>
+            </h3>
+            <p class="text-xs text-slate-400">Consistent distinction scores and school toppers mentored across prominent institutions</p>
           </div>
         </div>
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          
+          <!-- Sarthak 89% -->
+          <div class="bg-slate-900/90 border border-slate-800 hover:border-sky-400/50 rounded-xl p-4 shadow-sm group transition-all">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-slate-300 border border-slate-700">
+                CBSE Board
+              </span>
+              <span class="font-display font-extrabold text-xl text-sky-400">89%</span>
+            </div>
+            <h5 class="font-display font-bold text-base text-white">Sarthak</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5">Class 12 Board Exam</p>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-[10px] text-emerald-300 flex items-center space-x-1">
+              <i data-lucide="users" class="w-3 h-3 text-amber-400"></i>
+              <span class="font-medium">Offline Classroom</span>
+            </div>
+          </div>
+
+          <!-- Vidushi 87% -->
+          <div class="bg-slate-900/90 border border-slate-800 hover:border-sky-400/50 rounded-xl p-4 shadow-sm group transition-all">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-amber-300 border border-slate-700">
+                DPS Sector 30
+              </span>
+              <span class="font-display font-extrabold text-xl text-sky-400">87%</span>
+            </div>
+            <h5 class="font-display font-bold text-base text-white">Vidushi</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5">DPS Noida • Class 12</p>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-[10px] text-emerald-300 flex items-center space-x-1">
+              <i data-lucide="users" class="w-3 h-3 text-amber-400"></i>
+              <span class="font-medium">Classroom Batch</span>
+            </div>
+          </div>
+
+          <!-- Aditi Sharma 85% -->
+          <div class="bg-slate-900/90 border border-slate-800 hover:border-sky-400/50 rounded-xl p-4 shadow-sm group transition-all">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-purple-300 border border-slate-700">
+                Mahagun Moderne
+              </span>
+              <span class="font-display font-extrabold text-xl text-sky-400">85%</span>
+            </div>
+            <h5 class="font-display font-bold text-base text-white">Aditi Sharma</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5">Sector 78, Noida • Class 12</p>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-[10px] text-purple-300 flex items-center space-x-1">
+              <i data-lucide="user-check" class="w-3 h-3 text-purple-400"></i>
+              <span class="font-medium">1-on-1 Mentorship</span>
+            </div>
+          </div>
+
+          <!-- Baldeep 82% -->
+          <div class="bg-slate-900/90 border border-slate-800 hover:border-sky-400/50 rounded-xl p-4 shadow-sm group transition-all">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-amber-300 border border-slate-700">
+                Sapphire Int'l
+              </span>
+              <span class="font-display font-extrabold text-xl text-sky-400">82%</span>
+            </div>
+            <h5 class="font-display font-bold text-base text-white">Baldeep</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5">Sapphire School • Class 12</p>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-[10px] text-emerald-300 flex items-center space-x-1">
+              <i data-lucide="users" class="w-3 h-3 text-amber-400"></i>
+              <span class="font-medium">Offline Classroom</span>
+            </div>
+          </div>
+
+          <!-- Charvi Top Performance -->
+          <div class="bg-slate-900/90 border border-slate-800 hover:border-amber-400/50 rounded-xl p-4 shadow-sm group transition-all">
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] font-bold text-amber-300 border border-slate-700">
+                DPS Mathura Rd
+              </span>
+              <span class="font-display font-bold text-xs text-amber-300 bg-amber-400/20 px-2 py-0.5 rounded border border-amber-400/30">Top Rank</span>
+            </div>
+            <h5 class="font-display font-bold text-base text-white">Charvi</h5>
+            <p class="text-[10px] text-slate-400 mt-0.5">DPS Mathura Road • Class 12</p>
+            <div class="mt-3 pt-2.5 border-t border-slate-800/80 text-[10px] text-purple-300 flex items-center space-x-1">
+              <i data-lucide="user-check" class="w-3 h-3 text-purple-400"></i>
+              <span class="font-medium">1-on-1 Mentorship</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Verified Parent Testimonials -->
+      <div class="mb-14">
+        <h4 class="font-display text-lg font-bold text-white text-center mb-6 flex items-center justify-center space-x-2">
+          <i data-lucide="message-square-quote" class="w-5 h-5 text-amber-400"></i>
+          <span>What Noida Extension Parents Say About Ved Sir</span>
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm shadow-md">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
+                "My son Shaurya was struggling in pre-boards. After joining Ved Sir's offline batch at La Residentia, his calculus clarity and step presentation completely transformed. He ended up scoring <strong class="text-amber-300">96% in Class 12 Boards (St. John's)</strong>!"
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
+              <div class="w-10 h-10 rounded-full bg-amber-400/20 text-amber-400 flex items-center justify-center font-bold text-sm">
+                SR
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Mrs. Rawat</div>
+                <div class="text-[11px] text-slate-400">Parent of Shaurya (Class 12 • 96%) • Techzone 4</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm shadow-md">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
+                "Finding an educator who truly understands <strong class="text-amber-300">Applied Mathematics (241)</strong> in Greater Noida West was difficult until we joined Ved Sir. His specialized financial math problem sets and case study drills made all the difference."
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
+              <div class="w-10 h-10 rounded-full bg-indigo-400/20 text-indigo-300 flex items-center justify-center font-bold text-sm">
+                MK
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Manish K. Gupta</div>
+                <div class="text-[11px] text-slate-400">Parent of Riddhi Gupta (Commerce) • Gaur City 2</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm shadow-md">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-200 text-sm italic leading-relaxed mb-6">
+                "The capped batch of 10–12 students means Ved Sir checks every homework problem and line-by-line step marking. No child gets lost in the crowd. My son scored <strong class="text-amber-300">96% in Class 10 CBSE</strong>!"
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 pt-4 border-t border-white/10">
+              <div class="w-10 h-10 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center font-bold text-sm">
+                AS
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Anand Sharma</div>
+                <div class="text-[11px] text-slate-400">Parent of Aarav Sharma (CBSE 96%) • Sector 1</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Action Button Below Hall of Fame -->
+      <div class="text-center pt-2">
+        <a href="https://wa.me/917441155877?text=Hi%20Ved%20Sir,%20I%20want%20to%20join%20the%20next%20toppers%20batch%20and%20book%20a%20free%20demo" 
+           target="_blank" rel="noopener noreferrer"
+           class="open-demo-modal-btn inline-flex items-center justify-center space-x-3 px-8 py-4 rounded-xl text-sm sm:text-base font-extrabold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all shadow-xl shadow-amber-400/30 transform hover:-translate-y-0.5">
+          <i data-lucide="award" class="w-5 h-5 text-emerald-950"></i>
+          <span>Join the Next Toppers Batch — Book a Free Demo</span>
+        </a>
+        <p class="text-xs text-slate-400 mt-3">
+          Strictly capped at 10–12 students per batch • La Residentia Techzone 4 &amp; Interactive Online
+        </p>
       </div>
 
     </div>
@@ -1540,6 +2234,7 @@
           <h4 class="font-display font-bold text-white text-sm">Quick Links</h4>
           <ul class="space-y-2">
             <li><a href="#methodology" class="hover:text-white transition-colors">Teaching Methodology</a></li>
+            <li><a href="#diagnostics" class="hover:text-white transition-colors text-amber-300 font-medium">Diagnostic Test Series</a></li>
             <li><a href="#results" class="hover:text-white transition-colors">Student Board Results</a></li>
             <li><a href="#faq" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
             <li><a href="https://www.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 font-medium transition-colors">Student Portal Login</a></li>
