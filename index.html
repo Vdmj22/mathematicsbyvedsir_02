@@ -339,10 +339,10 @@
         <a href="#location" class="mobile-nav-link block px-3 py-2 text-sm font-semibold text-slate-300 hover:bg-slate-900 rounded-md">Center Address</a>
       </div>
       <div class="pt-2 border-t border-slate-800 flex flex-col space-y-2">
-        <a href="https://www.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" 
+        <a href="https://learn.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" 
            class="w-full text-center py-2.5 text-xs font-semibold text-slate-200 bg-slate-900 border border-slate-800 rounded-lg flex items-center justify-center space-x-2">
           <i data-lucide="layout-grid" class="w-4 h-4 text-amber-400"></i>
-          <span>Student Portal (mathematicsbyvedsir.in)</span>
+          <span>Student Portal (learn.mathematicsbyvedsir.in)</span>
         </a>
         <button type="button" 
            class="open-demo-modal-btn w-full text-center py-3 text-xs font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 rounded-lg flex items-center justify-center space-x-2 shadow-sm">
@@ -966,7 +966,7 @@
           </div>
 
           <div class="pt-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <span class="text-xs font-semibold text-slate-500">Includes Online Portal &amp; Test Series (www.mathematicsbyvedsir.in)</span>
+            <span class="text-xs font-semibold text-slate-500">Includes Online Portal &amp; Test Series (learn.mathematicsbyvedsir.in)</span>
             <a href="https://wa.me/917441155877?text=Hi%20Ved%20Sir,%20I%20am%20inquiring%20about%20CUET%20Maths%20batch"
                target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center space-x-1.5 px-4 py-2 rounded-lg text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 transition-colors">
@@ -1253,7 +1253,7 @@
             </li>
             <li class="flex items-center space-x-2">
               <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-              <span>Available 24/7 on www.mathematicsbyvedsir.in portal</span>
+              <span>Available 24/7 on learn.mathematicsbyvedsir.in portal</span>
             </li>
           </ul>
         </div>
@@ -1855,13 +1855,246 @@
         </div>
       </div>
 
+      <!-- ========================================== -->
+      <!-- 30-SECOND CONCEPT & SUCCESS STORY VIDEO SLIDER -->
+      <!-- ========================================== -->
+      <div class="mb-16 pt-6 border-t border-slate-800/80" id="video-reels-section">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1 flex items-center space-x-1.5">
+              <i data-lucide="clapperboard" class="w-3.5 h-3.5"></i>
+              <span>30-Second Micro-Lessons &amp; Topper Reels</span>
+            </div>
+            <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+              Watch Ved Sir Explain Key Concepts &amp; Student Stories
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              Bite-sized 30-second concept shortcuts and candid board topper reflections — click any reel to play the interactive 30s walkthrough.
+            </p>
+          </div>
+
+          <!-- Compact Filter + Prev/Next Slider Controls -->
+          <div class="flex flex-wrap items-center gap-2 self-start lg:self-auto">
+            <div class="inline-flex items-center bg-slate-900 border border-slate-800 rounded-xl p-1 gap-1" role="tablist" aria-label="Filter 30-second video clips">
+              <button type="button" class="video-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition-all" data-video-filter="all">
+                All Clips (5)
+              </button>
+              <button type="button" class="video-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all" data-video-filter="concept">
+                Ved Sir Concepts (3)
+              </button>
+              <button type="button" class="video-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all" data-video-filter="story">
+                Student Stories (2)
+              </button>
+            </div>
+
+            <div class="inline-flex items-center space-x-1.5 ml-1">
+              <button type="button" id="video-slider-prev" class="w-9 h-9 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 flex items-center justify-center transition-colors focus:outline-none" aria-label="Scroll video slider left">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button type="button" id="video-slider-next" class="w-9 h-9 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 flex items-center justify-center transition-colors focus:outline-none" aria-label="Scroll video slider right">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Snap Video Slider Track -->
+        <div id="video-slider-track" class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-3 -mx-1 px-1" style="scrollbar-width: thin; scrollbar-color: #334155 #0f172a;">
+          
+          <!-- Clip 1: Ved Sir Concept - Calculus Integration by Parts -->
+          <div class="video-slide-card snap-start shrink-0 w-[285px] sm:w-[320px] bg-slate-900/95 border border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-200 cursor-pointer open-video-modal-btn" data-video-id="clip-ilate" data-video-category="concept">
+            <div>
+              <!-- Visual Thumbnail Preview Area -->
+              <div class="relative h-40 bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-4 flex flex-col justify-between border-b border-slate-800/80 overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] font-semibold text-amber-300 z-10">
+                  <span>Concept Micro-Lesson · Class 12</span>
+                  <span class="font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-700">0:30</span>
+                </div>
+
+                <!-- Chalkboard Formula Preview -->
+                <div class="my-auto py-2 text-center font-mono text-xs sm:text-sm text-indigo-200 bg-slate-950/60 rounded-lg border border-indigo-500/20 px-3">
+                  ∫ e<sup>x</sup> [f(x) + f'(x)] dx = e<sup>x</sup>·f(x) + C
+                </div>
+
+                <div class="flex items-center justify-between z-10">
+                  <span class="text-[11px] text-slate-300 font-medium">Ved Sir · Calculus Trick</span>
+                  <span class="w-8 h-8 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-4 h-4 fill-slate-950 ml-0.5"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-display font-bold text-base text-white group-hover:text-amber-300 transition-colors leading-snug">
+                  10-Second Integration Cancelation Rule for CBSE Boards
+                </h4>
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                  How to spot e<sup>x</sup>[f(x)+f'(x)] in 5 seconds and write the mandatory 2-line justification for full step marks.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-3.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-amber-400 font-semibold">
+              <span>Watch 30s Walkthrough</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+          <!-- Clip 2: Student Success Story - Balraj (100/100) -->
+          <div class="video-slide-card snap-start shrink-0 w-[285px] sm:w-[320px] bg-slate-900/95 border border-slate-800 hover:border-emerald-400/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-200 cursor-pointer open-video-modal-btn" data-video-id="clip-balraj-100" data-video-category="story">
+            <div>
+              <div class="relative h-40 bg-gradient-to-br from-emerald-950/80 via-slate-900 to-slate-950 p-4 flex flex-col justify-between border-b border-slate-800/80 overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] font-semibold text-emerald-300 z-10">
+                  <span>Student Story · 100/100 Topper</span>
+                  <span class="font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-700">0:28</span>
+                </div>
+
+                <div class="my-auto py-2 px-3 bg-slate-950/60 rounded-lg border border-emerald-500/20 text-left">
+                  <div class="text-xs font-bold text-white">"Sunday step-audits turned my 92s into a 100/100."</div>
+                  <div class="text-[11px] text-emerald-300 mt-0.5">— Balraj (CBSE Class 12)</div>
+                </div>
+
+                <div class="flex items-center justify-between z-10">
+                  <span class="text-[11px] text-slate-300 font-medium">Interactive Online Batch</span>
+                  <span class="w-8 h-8 rounded-full bg-emerald-400 text-slate-950 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-4 h-4 fill-slate-950 ml-0.5"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-display font-bold text-base text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                  How Balraj Eliminated Careless Slips to Score 100/100
+                </h4>
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                  Balraj shares his 3-month pre-board error diary routine and how Ved Sir's line-by-line checking locked in perfection.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-3.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-emerald-400 font-semibold">
+              <span>Watch 28s Student Story</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+          <!-- Clip 3: Ved Sir Concept - Applied Maths (241) EMI & Sinking Fund -->
+          <div class="video-slide-card snap-start shrink-0 w-[285px] sm:w-[320px] bg-slate-900/95 border border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-200 cursor-pointer open-video-modal-btn" data-video-id="clip-applied-emi" data-video-category="concept">
+            <div>
+              <div class="relative h-40 bg-gradient-to-br from-amber-950/60 via-slate-900 to-slate-950 p-4 flex flex-col justify-between border-b border-slate-800/80 overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] font-semibold text-amber-300 z-10">
+                  <span>Applied Maths (241) · Class 12</span>
+                  <span class="font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-700">0:30</span>
+                </div>
+
+                <div class="my-auto py-2 text-center font-mono text-xs text-amber-200 bg-slate-950/60 rounded-lg border border-amber-500/20 px-3">
+                  EMI = [P · i · (1+i)<sup>n</sup>] / [(1+i)<sup>n</sup> − 1]
+                </div>
+
+                <div class="flex items-center justify-between z-10">
+                  <span class="text-[11px] text-slate-300 font-medium">Ved Sir · Financial Maths</span>
+                  <span class="w-8 h-8 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-4 h-4 fill-slate-950 ml-0.5"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-display font-bold text-base text-white group-hover:text-amber-300 transition-colors leading-snug">
+                  Applied Maths 241: Sinking Fund vs EMI Case-Study Trick
+                </h4>
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                  Never confuse Present Value (P) and Future Accumulation (A) in 4-mark Commerce Financial Maths case studies.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-3.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-amber-400 font-semibold">
+              <span>Watch 30s Walkthrough</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+          <!-- Clip 4: Student Success Story - Shaurya (96% St. John's) -->
+          <div class="video-slide-card snap-start shrink-0 w-[285px] sm:w-[320px] bg-slate-900/95 border border-slate-800 hover:border-emerald-400/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-200 cursor-pointer open-video-modal-btn" data-video-id="clip-shaurya-96" data-video-category="story">
+            <div>
+              <div class="relative h-40 bg-gradient-to-br from-sky-950/80 via-slate-900 to-slate-950 p-4 flex flex-col justify-between border-b border-slate-800/80 overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] font-semibold text-sky-300 z-10">
+                  <span>Student Story · 96% Achiever</span>
+                  <span class="font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-700">0:29</span>
+                </div>
+
+                <div class="my-auto py-2 px-3 bg-slate-950/60 rounded-lg border border-sky-500/20 text-left">
+                  <div class="text-xs font-bold text-white">"Small 10-student batch at Techzone 4 changed everything."</div>
+                  <div class="text-[11px] text-sky-300 mt-0.5">— Shaurya (St. John's • 96%)</div>
+                </div>
+
+                <div class="flex items-center justify-between z-10">
+                  <span class="text-[11px] text-slate-300 font-medium">Offline Batch (Techzone 4)</span>
+                  <span class="w-8 h-8 rounded-full bg-emerald-400 text-slate-950 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-4 h-4 fill-slate-950 ml-0.5"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-display font-bold text-base text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                  From Pre-Board Calculus Anxiety to 96% in Boards
+                </h4>
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                  How daily supervised problem-solving at La Residentia helped Shaurya master 3D Geometry and Differential Equations.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-3.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-emerald-400 font-semibold">
+              <span>Watch 29s Student Story</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+          <!-- Clip 5: Ved Sir Concept - Class 10 Trigonometry Identity Proof -->
+          <div class="video-slide-card snap-start shrink-0 w-[285px] sm:w-[320px] bg-slate-900/95 border border-slate-800 hover:border-amber-400/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-200 cursor-pointer open-video-modal-btn" data-video-id="clip-class10-trig" data-video-category="concept">
+            <div>
+              <div class="relative h-40 bg-gradient-to-br from-purple-950/70 via-slate-900 to-slate-950 p-4 flex flex-col justify-between border-b border-slate-800/80 overflow-hidden">
+                <div class="flex items-center justify-between text-[11px] font-semibold text-purple-300 z-10">
+                  <span>Concept Micro-Lesson · Class 10</span>
+                  <span class="font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-700">0:30</span>
+                </div>
+
+                <div class="my-auto py-2 text-center font-mono text-xs text-purple-200 bg-slate-950/60 rounded-lg border border-purple-500/20 px-3">
+                  sec²θ − tan²θ = (secθ − tanθ)(secθ + tanθ) = 1
+                </div>
+
+                <div class="flex items-center justify-between z-10">
+                  <span class="text-[11px] text-slate-300 font-medium">Ved Sir · Class 10 Boards</span>
+                  <span class="w-8 h-8 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-4 h-4 fill-slate-950 ml-0.5"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-display font-bold text-base text-white group-hover:text-amber-300 transition-colors leading-snug">
+                  Class 10 Trigonometry: The 3-Step Conjugate Rule
+                </h4>
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                  Never get stuck on NCERT Exercise 8.4 identity proofs again — learn when to rationalize vs convert to sin/cos.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-3.5 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-amber-400 font-semibold">
+              <span>Watch 30s Walkthrough</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Verified Parent Testimonials -->
       <div class="mb-14">
         <h4 class="font-display text-lg font-bold text-white text-center mb-6 flex items-center justify-center space-x-2">
           <i data-lucide="message-square-quote" class="w-5 h-5 text-amber-400"></i>
-          <span>What Noida Extension Parents Say About Ved Sir</span>
+          <span>What Noida Extension Parents &amp; Toppers Say About Ved Sir</span>
         </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div id="verified-testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- Testimonial 1 -->
           <div class="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm shadow-md">
@@ -1956,6 +2189,189 @@
 
     </div>
   </section>
+
+
+  <!-- ========================================== -->
+  <!-- 7.2 STUDENT & PARENT TESTIMONIAL SUBMISSION & REVIEW QUEUE -->
+  <!-- ========================================== -->
+  <section id="submit-testimonial" class="py-16 bg-slate-900 text-white border-b border-slate-800 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div class="max-w-2xl">
+          <div class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-1.5">
+            Hall of Fame Student &amp; Parent Wall
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Share Your Board Result &amp; Learning Experience
+          </h2>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            Are you a student or parent mentored by Ved Sir? Submit your mathematics score and experience below. New entries enter our verification queue before being published to the Hall of Fame.
+          </p>
+        </div>
+
+        <!-- Educator Review Toggle (Allows Ved Sir to preview/approve pending items) -->
+        <div class="self-start md:self-auto">
+          <button type="button" id="toggle-moderator-mode-btn" class="inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition-colors">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span id="moderator-mode-label">Educator Review Mode: Off</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2-Column Layout: Submission Form (Left 7 Cols) + Pending Verification Queue (Right 5 Cols) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Testimonial Submission Form -->
+        <div class="lg:col-span-7 bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+          <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-800">
+            <div>
+              <h3 class="font-display text-lg font-bold text-white">Submit Student / Parent Testimonial</h3>
+              <p class="text-xs text-slate-400 mt-0.5">All fields are verified against batch records before public display</p>
+            </div>
+            <span class="text-xs font-semibold text-amber-400">Step-by-Step Verified</span>
+          </div>
+
+          <form id="testimonial-submission-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Field 1: Name -->
+              <div>
+                <label for="testi-name" class="block text-xs font-bold text-slate-300 mb-1.5">
+                  Student or Parent Name <span class="text-amber-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="testi-name"
+                  required
+                  placeholder="e.g., Rohan Mehta / Mrs. Pooja Mehta"
+                  class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                />
+              </div>
+
+              <!-- Field 2: School -->
+              <div>
+                <label for="testi-school" class="block text-xs font-bold text-slate-300 mb-1.5">
+                  School Name &amp; Class <span class="text-amber-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="testi-school"
+                  required
+                  placeholder="e.g., DPS Noida • Class 12 Applied Maths"
+                  class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Field 3: Score / Achievement -->
+              <div>
+                <label for="testi-score" class="block text-xs font-bold text-slate-300 mb-1.5">
+                  Maths Score / Marks Jump <span class="text-amber-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="testi-score"
+                  required
+                  placeholder="e.g., 97/100 in Boards (or 68% to 94%)"
+                  class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+                />
+              </div>
+
+              <!-- Field 4: Batch Format -->
+              <div>
+                <label for="testi-format" class="block text-xs font-bold text-slate-300 mb-1.5">
+                  Learning Format
+                </label>
+                <select
+                  id="testi-format"
+                  class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3.5 py-2.5 text-sm text-white focus:border-amber-400 focus:outline-none"
+                >
+                  <option value="Offline Classroom (Techzone 4)">Offline Classroom (Techzone 4)</option>
+                  <option value="1-on-1 Personalized Mentorship">1-on-1 Personalized Mentorship</option>
+                  <option value="Interactive Online Batch">Interactive Online Batch</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Field 5: Short Message -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="testi-message" class="block text-xs font-bold text-slate-300">
+                  Your Experience &amp; Short Message <span class="text-amber-400">*</span>
+                </label>
+                <span id="testi-char-count" class="text-[11px] text-slate-400">0 / 280</span>
+              </div>
+              <textarea
+                id="testi-message"
+                rows="3"
+                maxlength="280"
+                required
+                placeholder="Share how Ved Sir's classes, step-marking tests, or doubt sessions helped improve your score and confidence..."
+                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button & Feedback Banner -->
+            <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <p class="text-[11px] text-slate-400">
+                Submissions are queued for manual review to maintain 100% authentic board results.
+              </p>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-extrabold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all shadow-md shrink-0 cursor-pointer"
+              >
+                <i data-lucide="send" class="w-4 h-4 text-slate-950"></i>
+                <span>Submit for Hall of Fame Review</span>
+              </button>
+            </div>
+
+            <!-- Confirmation Banner (Hidden by default) -->
+            <div id="testi-submit-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-xs text-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="flex items-start space-x-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <div class="font-bold text-white">Submitted to Pending Review Queue!</div>
+                  <p class="text-emerald-300/90 mt-0.5">Your testimonial is now visible in the Pending Review Queue and awaits manual verification by Ved Sir.</p>
+                </div>
+              </div>
+              <a id="testi-whatsapp-fasttrack" href="https://wa.me/917441155877" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 font-bold whitespace-nowrap shrink-0">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Notify Ved Sir on WhatsApp</span>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Column: Pending Review Queue -->
+        <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-7 shadow-xl">
+          <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+              <h3 class="font-display text-base sm:text-lg font-bold text-white">
+                Pending Manual Review Queue
+              </h3>
+            </div>
+            <span id="pending-queue-count" class="text-xs font-bold text-amber-300 bg-amber-400/10 border border-amber-400/30 px-2.5 py-0.5 rounded-md">
+              2 Pending
+            </span>
+          </div>
+
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            Recent submissions from students and parents currently awaiting roll-number &amp; scorecard verification before joining the main Hall of Fame wall.
+          </p>
+
+          <!-- Dynamic Queue Container -->
+          <div id="testimonial-pending-list" class="space-y-3.5 max-h-[380px] overflow-y-auto pr-1">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
 
   <!-- ========================================== -->
@@ -2242,7 +2658,7 @@
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50">
-            We provide multiple layers of doubt support: (1) 15 minutes before and after every batch are dedicated to homework doubts, (2) Special Sunday revision and doubt clearance sessions, and (3) Direct WhatsApp doubt messaging with Ved Sir for quick hints during self-study. Additionally, class notes and recordings are accessible via our official student portal at www.mathematicsbyvedsir.in.
+            We provide multiple layers of doubt support: (1) 15 minutes before and after every batch are dedicated to homework doubts, (2) Special Sunday revision and doubt clearance sessions, and (3) Direct WhatsApp doubt messaging with Ved Sir for quick hints during self-study. Additionally, class notes and recordings are accessible via our official student portal at learn.mathematicsbyvedsir.in.
           </div>
         </div>
 
@@ -2457,7 +2873,7 @@
             <a href="tel:+917441155877" class="p-2.5 rounded-lg bg-white/5 hover:bg-brand-600 text-slate-300 hover:text-white transition-colors" title="Call Center">
               <i data-lucide="phone" class="w-4 h-4"></i>
             </a>
-            <a href="https://www.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-white/5 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors" title="Student Portal">
+            <a href="https://learn.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-white/5 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors" title="Student Portal">
               <i data-lucide="layout-grid" class="w-4 h-4"></i>
             </a>
           </div>
@@ -2484,7 +2900,7 @@
             <li><a href="#results" class="hover:text-white transition-colors">Student Board Results</a></li>
             <li><a href="#blog" class="hover:text-white transition-colors text-amber-300 font-medium">Math Tips &amp; Career Blog</a></li>
             <li><a href="#faq" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
-            <li><a href="https://www.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 font-medium transition-colors">Student Portal Login</a></li>
+            <li><a href="https://learn.mathematicsbyvedsir.in/" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 font-medium transition-colors">Student Portal Login</a></li>
             <li><a href="#location" class="hover:text-white transition-colors">Directions to Center</a></li>
           </ul>
         </div>
@@ -2751,6 +3167,78 @@
              class="flex-1 sm:flex-initial inline-flex items-center justify-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-extrabold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all shadow-sm whitespace-nowrap">
             <i data-lucide="message-circle" class="w-4 h-4 text-emerald-950"></i>
             <span>Get Free PDF &amp; Guidance on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 14. 30-SECOND CONCEPT & STORY VIDEO PLAYER MODAL -->
+  <!-- ========================================== -->
+  <div id="video-clip-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/85 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <div class="relative w-full max-w-2xl bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden text-white">
+      
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between px-5 py-3.5 bg-slate-950 border-b border-slate-800">
+        <div class="flex items-center space-x-2 text-xs">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span id="video-modal-badge" class="font-bold text-amber-400">30-Second Micro-Lesson</span>
+          <span aria-hidden="true" class="text-slate-600">·</span>
+          <span id="video-modal-duration" class="font-mono text-slate-400">0:30</span>
+        </div>
+        <button type="button" id="close-video-modal-btn" class="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors" aria-label="Close video clip player">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Interactive 30-Second Visual Stage -->
+      <div class="p-6 sm:p-7 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <h3 id="video-modal-title" class="font-display text-xl sm:text-2xl font-extrabold text-white leading-snug mb-1">
+          Clip Title
+        </h3>
+        <p id="video-modal-speaker" class="text-xs text-slate-400 mb-5">
+          Ved Prakash (Ved Sir) · CBSE Mathematics
+        </p>
+
+        <!-- Simulated 30s Chalkboard / Story Walkthrough Screen -->
+        <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 mb-4 relative overflow-hidden">
+          <!-- 30s Progress Bar -->
+          <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden mb-4">
+            <div id="video-progress-bar" class="h-full bg-gradient-to-r from-amber-400 to-emerald-400 transition-all duration-300" style="width: 15%;"></div>
+          </div>
+
+          <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 mb-3">
+            <span id="video-step-indicator" class="text-amber-300 font-bold">STEP 1 OF 3 (0:00 – 0:10)</span>
+            <span id="video-timer-readout">0:05 / 0:30</span>
+          </div>
+
+          <!-- Dynamic Step / Transcript Cards -->
+          <div id="video-modal-steps" class="space-y-3">
+          </div>
+        </div>
+
+        <!-- Playback Controls & Takeaway -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+          <div class="flex items-center space-x-2">
+            <button type="button" id="video-play-toggle-btn" class="inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-400 text-slate-950 hover:bg-amber-300 transition-colors cursor-pointer">
+              <i data-lucide="pause" class="w-3.5 h-3.5"></i>
+              <span id="video-play-toggle-label">Pause 30s Walkthrough</span>
+            </button>
+            <button type="button" id="video-restart-btn" class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors cursor-pointer">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+              <span>Replay</span>
+            </button>
+          </div>
+
+          <a id="video-modal-whatsapp-cta"
+             href="https://wa.me/917441155877"
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 transition-colors">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>Watch Full Lecture / Book Free Demo</span>
           </a>
         </div>
       </div>
@@ -3275,6 +3763,638 @@
           closeBlogModal();
         }
       });
+
+      // ==========================================
+      // 11. 30-SECOND VIDEO SLIDER & INTERACTIVE CLIP PLAYER
+      // ==========================================
+      const VIDEO_CLIPS = {
+        'clip-ilate': {
+          badge: 'Ved Sir 30s Concept Micro-Lesson · Class 12 Calculus',
+          duration: '0:30',
+          title: '10-Second Integration Cancelation Rule for CBSE Boards',
+          speaker: 'Ved Prakash (Ved Sir) · Class 12 Core & Applied Calculus',
+          whatsappText: 'Hi Ved Sir, I watched your 30-second Integration Trick clip and would like to book a free demo class.',
+          steps: [
+            {
+              time: '0:00 – 0:10 · Spot the Pattern',
+              heading: 'Step 1: Identify e^x multiplied by a sum of two terms',
+              detail: 'Whenever an integral has e^x outside brackets, immediately test if splitting the fraction gives f(x) + f\'(x). Example: ∫ e^x [(x-1)/(x+1)^3] dx.'
+            },
+            {
+              time: '0:10 – 0:20 · Algebraic Split',
+              heading: 'Step 2: Rewrite numerator as (x+1) - 2',
+              detail: 'Split into f(x) = 1/(x+1)^2 and its exact derivative f\'(x) = -2/(x+1)^3. Do not apply long integration by parts twice!'
+            },
+            {
+              time: '0:20 – 0:30 · Mandatory CBSE Step-Mark Statement',
+              heading: 'Step 3: State the property & write final answer',
+              detail: 'Write "Using ∫ e^x [f(x) + f\'(x)] dx = e^x f(x) + C" to earn +1 step mark, then conclude: e^x / (x+1)^2 + C.'
+            }
+          ]
+        },
+        'clip-balraj-100': {
+          badge: 'Student Success Story · Perfect 100/100 Scorer',
+          duration: '0:28',
+          title: 'How Balraj Eliminated Careless Slips to Score 100/100',
+          speaker: 'Balraj · 100/100 in CBSE Class 12 Mathematics (Online Batch)',
+          whatsappText: 'Hi Ved Sir, I watched Balraj\'s 100/100 success story and want to inquire about your batches.',
+          steps: [
+            {
+              time: '0:00 – 0:09 · The Pre-Board Plateau',
+              heading: '"I was stuck at 90–92% due to silly sign & step deductions"',
+              detail: 'In school exams, I knew the concepts but kept losing 0.5 and 1 mark in Matrices, Probability, and Calculus because of skipped formula declarations.'
+            },
+            {
+              time: '0:09 – 0:19 · Ved Sir\'s Sunday Step-Audits',
+              heading: '"Every Sunday test was checked like a real CBSE Board copy"',
+              detail: 'Ved Sir highlighted every single missing unit, integration constant (+C), and theorem condition on my answer sheet.'
+            },
+            {
+              time: '0:19 – 0:28 · Exam Day Result',
+              heading: '"Finished the CBSE Board paper in 2 hours 35 mins — 100/100!"',
+              detail: 'Having 25 minutes left to verify all 38 questions with Ved Sir\'s reverse-checking tricks guaranteed a flawless 100/100.'
+            }
+          ]
+        },
+        'clip-applied-emi': {
+          badge: 'Ved Sir 30s Concept Micro-Lesson · Applied Maths (241)',
+          duration: '0:30',
+          title: 'Applied Maths 241: Sinking Fund vs EMI Case-Study Trick',
+          speaker: 'Ved Prakash (Ved Sir) · Class 12 Applied Mathematics (Code 241)',
+          whatsappText: 'Hi Ved Sir, I watched your Applied Maths 241 EMI vs Sinking Fund clip and want to join the Applied Maths batch.',
+          steps: [
+            {
+              time: '0:00 – 0:10 · The #1 Commerce Confusion',
+              heading: 'Step 1: Is the lump sum needed TODAY or in the FUTURE?',
+              detail: 'If a loan is taken today (Present Value P is given), use the EMI formula. If a company saves money for a future machine replacement (Future Value S is given), use Sinking Fund.'
+            },
+            {
+              time: '0:10 – 0:20 · Monthly Rate Conversion Trap',
+              heading: 'Step 2: Always divide annual rate by 1200 for monthly EMI',
+              detail: '90% of calculation slips happen when students use r% instead of i = r / (12 × 100). Write i clearly in the given box first.'
+            },
+            {
+              time: '0:20 – 0:30 · Using Given (1+i)^n Values',
+              heading: 'Step 3: Spot the pre-calculated value in the question',
+              detail: 'CBSE case studies always print values like (1.0075)^24 = 1.1964 in the question stem. Match the exponent to verify your n is right!'
+            }
+          ]
+        },
+        'clip-shaurya-96': {
+          badge: 'Student Success Story · 96% Board Achiever',
+          duration: '0:29',
+          title: 'From Pre-Board Calculus Anxiety to 96% in Boards',
+          speaker: 'Shaurya · 96% in CBSE Class 12 Maths (St. John\'s School • Offline Batch)',
+          whatsappText: 'Hi Ved Sir, I watched Shaurya\'s 96% story and want to book a demo at your Techzone 4 center.',
+          steps: [
+            {
+              time: '0:00 – 0:10 · Overcoming Calculus Fear',
+              heading: '"Differential Equations & 3D Geometry felt overwhelming at first"',
+              detail: 'In a large school classroom, it was hard to get individual doubts cleared when I got stuck on Exemplar problems.'
+            },
+            {
+              time: '0:10 – 0:20 · La Residentia Small Batch Advantage',
+              heading: '"With only 10 students in the batch, Ved Sir checked my notebook daily"',
+              detail: 'Practicing under Ved Sir\'s direct supervision at Techzone 4 fixed my foundational trigonometry and integration gaps within 4 weeks.'
+            },
+            {
+              time: '0:20 – 0:29 · 96% in CBSE Boards',
+              heading: '"Walked into the board exam hall with 100% confidence"',
+              detail: 'Every single 5-mark case study and calculus question in the board paper matched the diagnostic test series we practiced.'
+            }
+          ]
+        },
+        'clip-class10-trig': {
+          badge: 'Ved Sir 30s Concept Micro-Lesson · Class 10 CBSE',
+          duration: '0:30',
+          title: 'Class 10 Trigonometry: The 3-Step Conjugate Rule',
+          speaker: 'Ved Prakash (Ved Sir) · Class 10 CBSE Foundation & Board Prep',
+          whatsappText: 'Hi Ved Sir, I watched your Class 10 Trigonometry 30s clip and want to book a free diagnostic demo.',
+          steps: [
+            {
+              time: '0:00 – 0:10 · Square-Root & Fraction Identities',
+              heading: 'Step 1: Look at the denominator of LHS',
+              detail: 'In √[(1 + sinA)/(1 - sinA)], multiply numerator and denominator inside the root by the conjugate (1 + sinA).'
+            },
+            {
+              time: '0:10 – 0:20 · Apply sin²A + cos²A = 1',
+              heading: 'Step 2: Replace 1 - sin²A with cos²A',
+              detail: 'The square root cancels cleanly: (1 + sinA) / cosA. State "[Since 1 - sin²A = cos²A]" in brackets for CBSE step marks.'
+            },
+            {
+              time: '0:20 – 0:30 · Split the Denominator',
+              heading: 'Step 3: 1/cosA + sinA/cosA = secA + tanA = RHS',
+              detail: 'Three clean lines, zero algebraic mess, and 3/3 guaranteed CBSE board marks!'
+            }
+          ]
+        }
+      };
+
+      const sliderTrack = document.getElementById('video-slider-track');
+      const sliderPrevBtn = document.getElementById('video-slider-prev');
+      const sliderNextBtn = document.getElementById('video-slider-next');
+      const videoFilterBtns = document.querySelectorAll('.video-filter-btn');
+      const videoSlideCards = document.querySelectorAll('.video-slide-card');
+
+      if (sliderPrevBtn && sliderTrack) {
+        sliderPrevBtn.addEventListener('click', function () {
+          sliderTrack.scrollBy({ left: -340, behavior: 'smooth' });
+        });
+      }
+
+      if (sliderNextBtn && sliderTrack) {
+        sliderNextBtn.addEventListener('click', function () {
+          sliderTrack.scrollBy({ left: 340, behavior: 'smooth' });
+        });
+      }
+
+      videoFilterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const cat = this.getAttribute('data-video-filter');
+          videoFilterBtns.forEach(function (b) {
+            b.className = 'video-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all';
+          });
+          this.className = 'video-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition-all';
+
+          videoSlideCards.forEach(function (card) {
+            const cardCat = card.getAttribute('data-video-category');
+            if (cat === 'all' || cardCat === cat) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Video Clip Modal & Simulated 30s Walkthrough Timer
+      const videoModal = document.getElementById('video-clip-modal');
+      const closeVideoModalBtn = document.getElementById('close-video-modal-btn');
+      const openVideoModalBtns = document.querySelectorAll('.open-video-modal-btn');
+      const videoModalBadge = document.getElementById('video-modal-badge');
+      const videoModalDuration = document.getElementById('video-modal-duration');
+      const videoModalTitle = document.getElementById('video-modal-title');
+      const videoModalSpeaker = document.getElementById('video-modal-speaker');
+      const videoModalSteps = document.getElementById('video-modal-steps');
+      const videoModalWhatsapp = document.getElementById('video-modal-whatsapp-cta');
+      const videoProgressBar = document.getElementById('video-progress-bar');
+      const videoStepIndicator = document.getElementById('video-step-indicator');
+      const videoTimerReadout = document.getElementById('video-timer-readout');
+      const videoPlayToggleBtn = document.getElementById('video-play-toggle-btn');
+      const videoRestartBtn = document.getElementById('video-restart-btn');
+
+      let clipTimerInterval = null;
+      let clipElapsedSeconds = 0;
+      let clipIsPlaying = false;
+      let currentClipId = null;
+
+      function updateClipPlaybackUI() {
+        const pct = Math.min(100, Math.round((clipElapsedSeconds / 30) * 100));
+        if (videoProgressBar) videoProgressBar.style.width = Math.max(6, pct) + '%';
+
+        const secStr = clipElapsedSeconds < 10 ? '0' + clipElapsedSeconds : '' + clipElapsedSeconds;
+        if (videoTimerReadout) videoTimerReadout.textContent = '0:' + secStr + ' / 0:30';
+
+        let activeStepIdx = 0;
+        if (clipElapsedSeconds >= 20) {
+          activeStepIdx = 2;
+        } else if (clipElapsedSeconds >= 10) {
+          activeStepIdx = 1;
+        }
+
+        if (videoStepIndicator) {
+          videoStepIndicator.textContent = 'STEP ' + (activeStepIdx + 1) + ' OF 3 · PLAYING WALKTHROUGH';
+        }
+
+        const stepEls = videoModalSteps ? videoModalSteps.querySelectorAll('.clip-step-item') : [];
+        stepEls.forEach(function (el, idx) {
+          if (idx === activeStepIdx) {
+            el.className = 'clip-step-item p-3.5 rounded-xl border border-amber-400/60 bg-amber-400/10 transition-all';
+          } else {
+            el.className = 'clip-step-item p-3.5 rounded-xl border border-slate-800 bg-slate-900/60 opacity-75 transition-all';
+          }
+        });
+      }
+
+      function startClipTimer() {
+        stopClipTimer();
+        clipIsPlaying = true;
+        if (videoPlayToggleBtn) {
+          videoPlayToggleBtn.innerHTML = '<i data-lucide="pause" class="w-3.5 h-3.5"></i><span>Pause 30s Walkthrough</span>';
+          if (window.lucide) window.lucide.createIcons();
+        }
+        clipTimerInterval = setInterval(function () {
+          clipElapsedSeconds += 1;
+          if (clipElapsedSeconds > 30) {
+            clipElapsedSeconds = 30;
+            updateClipPlaybackUI();
+            stopClipTimer();
+            if (videoStepIndicator) videoStepIndicator.textContent = 'WALKTHROUGH COMPLETE (0:30)';
+            if (videoPlayToggleBtn) {
+              videoPlayToggleBtn.innerHTML = '<i data-lucide="play" class="w-3.5 h-3.5"></i><span>Play Again</span>';
+              if (window.lucide) window.lucide.createIcons();
+            }
+            return;
+          }
+          updateClipPlaybackUI();
+        }, 1000);
+      }
+
+      function stopClipTimer() {
+        clipIsPlaying = false;
+        if (clipTimerInterval) {
+          clearInterval(clipTimerInterval);
+          clipTimerInterval = null;
+        }
+      }
+
+      function openVideoClipModal(clipId) {
+        const clip = VIDEO_CLIPS[clipId];
+        if (!clip || !videoModal) return;
+        currentClipId = clipId;
+
+        videoModalBadge.textContent = clip.badge;
+        videoModalDuration.textContent = clip.duration;
+        videoModalTitle.textContent = clip.title;
+        videoModalSpeaker.textContent = clip.speaker;
+        videoModalWhatsapp.href = 'https://wa.me/917441155877?text=' + encodeURIComponent(clip.whatsappText);
+
+        videoModalSteps.innerHTML = '';
+        clip.steps.forEach(function (st) {
+          const item = document.createElement('div');
+          item.className = 'clip-step-item p-3.5 rounded-xl border border-slate-800 bg-slate-900/60 transition-all';
+
+          const timeEl = document.createElement('div');
+          timeEl.className = 'text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider mb-0.5';
+          timeEl.textContent = st.time;
+
+          const headEl = document.createElement('div');
+          headEl.className = 'font-display font-bold text-sm text-white';
+          headEl.textContent = st.heading;
+
+          const descEl = document.createElement('p');
+          descEl.className = 'text-xs text-slate-300 mt-1 leading-relaxed';
+          descEl.textContent = st.detail;
+
+          item.appendChild(timeEl);
+          item.appendChild(headEl);
+          item.appendChild(descEl);
+          videoModalSteps.appendChild(item);
+        });
+
+        clipElapsedSeconds = 0;
+        updateClipPlaybackUI();
+        videoModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        startClipTimer();
+      }
+
+      function closeVideoClipModal() {
+        stopClipTimer();
+        if (videoModal) {
+          videoModal.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        }
+      }
+
+      openVideoModalBtns.forEach(function (card) {
+        card.addEventListener('click', function () {
+          const clipId = this.getAttribute('data-video-id');
+          openVideoClipModal(clipId);
+        });
+      });
+
+      if (closeVideoModalBtn) {
+        closeVideoModalBtn.addEventListener('click', closeVideoClipModal);
+      }
+
+      if (videoPlayToggleBtn) {
+        videoPlayToggleBtn.addEventListener('click', function () {
+          if (clipIsPlaying) {
+            stopClipTimer();
+            videoPlayToggleBtn.innerHTML = '<i data-lucide="play" class="w-3.5 h-3.5"></i><span>Resume 30s Walkthrough</span>';
+            if (window.lucide) window.lucide.createIcons();
+          } else {
+            if (clipElapsedSeconds >= 30) clipElapsedSeconds = 0;
+            startClipTimer();
+          }
+        });
+      }
+
+      if (videoRestartBtn) {
+        videoRestartBtn.addEventListener('click', function () {
+          clipElapsedSeconds = 0;
+          updateClipPlaybackUI();
+          startClipTimer();
+        });
+      }
+
+      if (videoModal) {
+        videoModal.addEventListener('click', function (e) {
+          if (e.target === videoModal) {
+            closeVideoClipModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && videoModal && !videoModal.classList.contains('hidden')) {
+          closeVideoClipModal();
+        }
+      });
+
+      // ==========================================
+      // 12. STUDENT & PARENT TESTIMONIAL SUBMISSION + PENDING QUEUE
+      // ==========================================
+      const PENDING_STORAGE_KEY = 'mvs_pending_testimonials_v1';
+      const APPROVED_STORAGE_KEY = 'mvs_approved_testimonials_v1';
+
+      const DEFAULT_PENDING_QUEUE = [
+        {
+          id: 'pq-1',
+          name: 'Mrs. Kavita Nair (Parent of Devansh)',
+          school: 'Ryan International • Class 12 Core Maths',
+          score: '95/100 in CBSE Boards',
+          format: 'Offline Classroom (Techzone 4)',
+          message: 'Ved Sir\'s Sunday diagnostic reports pinpointed exactly why Devansh was losing marks in Calculus steps. Highly grateful for the personal attention!',
+          submittedAt: 'Awaiting Scorecard Check'
+        },
+        {
+          id: 'pq-2',
+          name: 'Ishaan Choudhary',
+          school: 'Lotus Valley • Class 12 Applied Maths (241)',
+          score: '94% in Applied Maths',
+          format: '1-on-1 Personalized Mentorship',
+          message: 'Financial Maths and Inferential Statistics became my highest-scoring units thanks to Ved Sir\'s formula sheets and case-study drills.',
+          submittedAt: 'Awaiting Roll No. Verification'
+        }
+      ];
+
+      let moderatorMode = false;
+      const toggleModBtn = document.getElementById('toggle-moderator-mode-btn');
+      const modModeLabel = document.getElementById('moderator-mode-label');
+      const pendingListEl = document.getElementById('testimonial-pending-list');
+      const pendingCountEl = document.getElementById('pending-queue-count');
+      const verifiedGridEl = document.getElementById('verified-testimonials-grid');
+      const testiForm = document.getElementById('testimonial-submission-form');
+      const testiMessageInput = document.getElementById('testi-message');
+      const testiCharCount = document.getElementById('testi-char-count');
+      const testiSuccessBanner = document.getElementById('testi-submit-success');
+      const testiWhatsappFasttrack = document.getElementById('testi-whatsapp-fasttrack');
+
+      function loadPendingQueue() {
+        try {
+          const raw = localStorage.getItem(PENDING_STORAGE_KEY);
+          if (raw) {
+            return JSON.parse(raw);
+          }
+        } catch (err) {}
+        return DEFAULT_PENDING_QUEUE.slice();
+      }
+
+      function savePendingQueue(list) {
+        try {
+          localStorage.setItem(PENDING_STORAGE_KEY, JSON.stringify(list));
+        } catch (err) {}
+      }
+
+      function loadApprovedTestimonials() {
+        try {
+          const raw = localStorage.getItem(APPROVED_STORAGE_KEY);
+          if (raw) {
+            return JSON.parse(raw);
+          }
+        } catch (err) {}
+        return [];
+      }
+
+      function saveApprovedTestimonials(list) {
+        try {
+          localStorage.setItem(APPROVED_STORAGE_KEY, JSON.stringify(list));
+        } catch (err) {}
+      }
+
+      function getInitials(nameStr) {
+        const parts = (nameStr || 'VS').trim().split(/\s+/);
+        if (parts.length >= 2) {
+          return (parts[0][0] + parts[1][0]).toUpperCase();
+        }
+        return (parts[0].slice(0, 2) || 'VS').toUpperCase();
+      }
+
+      function appendApprovedCardToDom(item) {
+        if (!verifiedGridEl) return;
+        const card = document.createElement('div');
+        card.className = 'bg-gradient-to-b from-white/10 to-white/5 border border-emerald-500/30 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-sm shadow-md';
+
+        const topDiv = document.createElement('div');
+        const starsRow = document.createElement('div');
+        starsRow.className = 'flex items-center justify-between mb-3';
+        starsRow.innerHTML = '<div class="flex items-center space-x-1 text-amber-400">' +
+          '<i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>'.repeat(5) +
+          '</div><span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300">Verified Result</span>';
+
+        const msgP = document.createElement('p');
+        msgP.className = 'text-slate-200 text-sm italic leading-relaxed mb-6';
+        msgP.textContent = '"' + item.message + '"';
+
+        topDiv.appendChild(starsRow);
+        topDiv.appendChild(msgP);
+
+        const bottomDiv = document.createElement('div');
+        bottomDiv.className = 'flex items-center space-x-3 pt-4 border-t border-white/10';
+
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'w-10 h-10 rounded-full bg-amber-400/20 text-amber-400 flex items-center justify-center font-bold text-sm shrink-0';
+        avatarDiv.textContent = getInitials(item.name);
+
+        const metaDiv = document.createElement('div');
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'font-bold text-sm text-white';
+        nameDiv.textContent = item.name;
+
+        const subDiv = document.createElement('div');
+        subDiv.className = 'text-[11px] text-slate-400';
+        subDiv.textContent = item.school + ' • ' + item.score;
+
+        metaDiv.appendChild(nameDiv);
+        metaDiv.appendChild(subDiv);
+        bottomDiv.appendChild(avatarDiv);
+        bottomDiv.appendChild(metaDiv);
+
+        card.appendChild(topDiv);
+        card.appendChild(bottomDiv);
+        verifiedGridEl.appendChild(card);
+      }
+
+      function renderPendingQueue() {
+        const queue = loadPendingQueue();
+        if (pendingCountEl) {
+          pendingCountEl.textContent = queue.length + ' Pending';
+        }
+        if (!pendingListEl) return;
+
+        pendingListEl.innerHTML = '';
+        if (queue.length === 0) {
+          const emptyEl = document.createElement('div');
+          emptyEl.className = 'p-5 rounded-xl bg-slate-900/60 border border-slate-800 text-center text-xs text-slate-400';
+          emptyEl.textContent = 'All submitted testimonials have been reviewed! Use the form on the left to submit a new student or parent review.';
+          pendingListEl.appendChild(emptyEl);
+          return;
+        }
+
+        queue.forEach(function (item) {
+          const card = document.createElement('div');
+          card.className = 'p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all space-y-2';
+
+          // Unboxed Metadata Header
+          const headerRow = document.createElement('div');
+          headerRow.className = 'flex items-start justify-between gap-2';
+
+          const titleWrap = document.createElement('div');
+          const nameEl = document.createElement('div');
+          nameEl.className = 'font-display font-bold text-sm text-white';
+          nameEl.textContent = item.name;
+
+          const metaLine = document.createElement('div');
+          metaLine.className = 'text-[11px] text-slate-400 mt-0.5';
+          metaLine.textContent = item.school + ' · ' + item.format;
+
+          titleWrap.appendChild(nameEl);
+          titleWrap.appendChild(metaLine);
+
+          const scoreEl = document.createElement('span');
+          scoreEl.className = 'text-xs font-extrabold text-amber-400 shrink-0';
+          scoreEl.textContent = item.score;
+
+          headerRow.appendChild(titleWrap);
+          headerRow.appendChild(scoreEl);
+
+          const msgEl = document.createElement('p');
+          msgEl.className = 'text-xs text-slate-300 italic leading-relaxed';
+          msgEl.textContent = '"' + item.message + '"';
+
+          const footerRow = document.createElement('div');
+          footerRow.className = 'pt-2 border-t border-slate-800/80 flex items-center justify-between gap-2 text-[11px]';
+
+          const statusSpan = document.createElement('span');
+          statusSpan.className = 'text-amber-300/90 font-medium';
+          statusSpan.textContent = 'Status: Pending Manual Review (' + (item.submittedAt || 'Just now') + ')';
+
+          footerRow.appendChild(statusSpan);
+
+          if (moderatorMode) {
+            const actionWrap = document.createElement('div');
+            actionWrap.className = 'flex items-center space-x-1.5';
+
+            const approveBtn = document.createElement('button');
+            approveBtn.type = 'button';
+            approveBtn.className = 'px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 font-bold text-[10px] cursor-pointer';
+            approveBtn.textContent = 'Approve to Hall of Fame';
+            approveBtn.addEventListener('click', function () {
+              const currentQ = loadPendingQueue();
+              const nextQ = currentQ.filter(function (q) { return q.id !== item.id; });
+              savePendingQueue(nextQ);
+
+              const approved = loadApprovedTestimonials();
+              approved.push(item);
+              saveApprovedTestimonials(approved);
+
+              appendApprovedCardToDom(item);
+              renderPendingQueue();
+              if (window.lucide) window.lucide.createIcons();
+            });
+
+            const dismissBtn = document.createElement('button');
+            dismissBtn.type = 'button';
+            dismissBtn.className = 'px-2 py-1 rounded bg-rose-500/15 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 font-semibold text-[10px] cursor-pointer';
+            dismissBtn.textContent = 'Remove';
+            dismissBtn.addEventListener('click', function () {
+              const currentQ = loadPendingQueue();
+              const nextQ = currentQ.filter(function (q) { return q.id !== item.id; });
+              savePendingQueue(nextQ);
+              renderPendingQueue();
+            });
+
+            actionWrap.appendChild(approveBtn);
+            actionWrap.appendChild(dismissBtn);
+            footerRow.appendChild(actionWrap);
+          }
+
+          card.appendChild(headerRow);
+          card.appendChild(msgEl);
+          card.appendChild(footerRow);
+          pendingListEl.appendChild(card);
+        });
+      }
+
+      // Hydrate previously approved items and pending queue on load
+      const existingApproved = loadApprovedTestimonials();
+      existingApproved.forEach(function (item) {
+        appendApprovedCardToDom(item);
+      });
+      renderPendingQueue();
+      if (window.lucide) window.lucide.createIcons();
+
+      if (toggleModBtn) {
+        toggleModBtn.addEventListener('click', function () {
+          moderatorMode = !moderatorMode;
+          if (modModeLabel) {
+            modModeLabel.textContent = moderatorMode ? 'Educator Review Mode: Active (Click Approve)' : 'Educator Review Mode: Off';
+          }
+          toggleModBtn.className = moderatorMode
+            ? 'inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/50 transition-colors cursor-pointer'
+            : 'inline-flex items-center space-x-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition-colors cursor-pointer';
+          renderPendingQueue();
+        });
+      }
+
+      if (testiMessageInput && testiCharCount) {
+        testiMessageInput.addEventListener('input', function () {
+          testiCharCount.textContent = this.value.length + ' / 280';
+        });
+      }
+
+      if (testiForm) {
+        testiForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const nameVal = document.getElementById('testi-name').value.trim();
+          const schoolVal = document.getElementById('testi-school').value.trim();
+          const scoreVal = document.getElementById('testi-score').value.trim();
+          const formatVal = document.getElementById('testi-format').value;
+          const msgVal = document.getElementById('testi-message').value.trim();
+
+          if (!nameVal || !schoolVal || !scoreVal || !msgVal) return;
+
+          const newEntry = {
+            id: 'pq-' + Date.now(),
+            name: nameVal,
+            school: schoolVal,
+            score: scoreVal,
+            format: formatVal,
+            message: msgVal,
+            submittedAt: 'Submitted Just Now'
+          };
+
+          const queue = loadPendingQueue();
+          queue.unshift(newEntry);
+          savePendingQueue(queue);
+          renderPendingQueue();
+
+          if (testiWhatsappFasttrack) {
+            const waMsg = 'Hi Ved Sir, I just submitted my testimonial on the website:\nName: ' + nameVal + '\nSchool: ' + schoolVal + '\nScore: ' + scoreVal + '\nMessage: ' + msgVal;
+            testiWhatsappFasttrack.href = 'https://wa.me/917441155877?text=' + encodeURIComponent(waMsg);
+          }
+
+          if (testiSuccessBanner) {
+            testiSuccessBanner.classList.remove('hidden');
+          }
+
+          testiForm.reset();
+          if (testiCharCount) testiCharCount.textContent = '0 / 280';
+          if (window.lucide) window.lucide.createIcons();
+        });
+      }
     });
   </script>
 
